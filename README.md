@@ -37,10 +37,10 @@ Usage:
 
 To check specific WCAG levels
 ```javascript
-var ccc = new ColorContrastChecker();
+const ccc = new ColorContrastChecker();
 
-var color1 = "#FFFFFF";
-var color2 = "#000000;
+const color1 = "#FFFFFF";
+const color2 = "#000000";
 
 if (ccc.isLevelAA(color1, color2, 14)) {
     alert("Valid Level AA");
@@ -52,11 +52,11 @@ if (ccc.isLevelAA(color1, color2, 14)) {
 
 To check custom ratios
 ```javascript
-var ccc = new ColorContrastChecker();
+const ccc = new ColorContrastChecker();
 
-var color1 = "#FFFFFF";
-var color2 = "#000000;
-var customRatio = 5.7;
+const color1 = "#FFFFFF";
+const color2 = "#000000";
+const customRatio = 5.7;
 
 // No need for font size, now that we are using a custom ratio.
 // This is because we are no longer checking against WCAG requirements.
@@ -75,7 +75,7 @@ You can pass pairs and get results:
 
 
 ```javascript
-    var pairs = [
+    const pairs = [
         {
             'colorA': '#000000',
             'colorB': '#000000',  // All should fail
