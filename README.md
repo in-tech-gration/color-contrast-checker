@@ -15,12 +15,12 @@ https://www.w3.org/TR/2001/WD-css3-color-20010305#colorunits
 Installation:
 ------------
 
-```
+```bash
 npm install color-contrast-checker
 ```
 or using package.json
 
-```
+```json
 {
   "name": "my-app",
   ..
@@ -36,7 +36,7 @@ Usage:
 -----
 
 To check specific WCAG levels
-```
+```javascript
 var ccc = new ColorContrastChecker();
 
 var color1 = "#FFFFFF";
@@ -51,7 +51,7 @@ if (ccc.isLevelAA(color1, color2, 14)) {
 ```
 
 To check custom ratios
-```
+```javascript
 var ccc = new ColorContrastChecker();
 
 var color1 = "#FFFFFF";
@@ -74,7 +74,7 @@ Advanced Usage:
 You can pass pairs and get results:
 
 
-```
+```javascript
     var pairs = [
         {
             'colorA': '#000000',
@@ -114,7 +114,7 @@ You can pass pairs and get results:
 
 The result will look like this:
 
-```
+```javascript
 [
     {
         'WCAG_AA' : false,
